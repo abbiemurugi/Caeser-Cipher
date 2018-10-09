@@ -51,6 +51,10 @@ class CeaserCipher {
         myKey = key;
     }
 
+    public void setMyAlphabet(String Alphabet){
+
+    }
+
 
     public String getAlphabet() {
         return myAlphabet;
