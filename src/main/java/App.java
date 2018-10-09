@@ -23,10 +23,10 @@ public class App {
 
         if (input.equals("a")) {
 
-            System.out.println(encrypt);
+            System.out.println(encrypt.getEncrypt());
         }
         else if(input.equals("b")){
-            System.out.println(decrypt);
+            System.out.println(decrypt.getDecrypt());
         }
         else {
             System.out.println("Invalid choice");
@@ -37,7 +37,39 @@ public class App {
     }
 }
 
+class CeaserCipher {
 
+    private String myAlphabet;
+    private String myEncrypt;
+    private String myDecrypt;
+    private int myKey;
+
+    public CeaserCipher(String alphabet, String encrypt, String decrypt, int key) {
+        myAlphabet = alphabet;
+        myEncrypt = encrypt;
+        myDecrypt = decrypt;
+        myKey = key;
+    }
+
+
+    public String getAlphabet() {
+        return myAlphabet;
+    }
+
+
+    public String getEncrypt() {
+        return myEncrypt;
+    }
+
+    public String getDecrypt() {
+        return myDecrypt;
+    }
+
+    public int getKey() {
+        return myKey;
+    }
+
+}
 
 
 
