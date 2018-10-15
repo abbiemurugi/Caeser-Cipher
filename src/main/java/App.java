@@ -23,10 +23,10 @@ public class App {
 
         if (input.equals("a")) {
 
-            System.out.println(encrypt.getEncrypt());
+            System.out.println(encrypt);
         }
         else if(input.equals("b")){
-            System.out.println(decrypt.getDecrypt());
+            System.out.println(decrypt);
         }
         else {
             System.out.println("Invalid choice");
